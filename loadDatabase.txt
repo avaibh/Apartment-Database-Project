@@ -1,0 +1,28 @@
+/*Note: In order for MySQL to bulk load a table, the data must be in this folder:
+MAC: /Users/vaibhav/mysqlFile/  */
+
+Note: There are some intentional errors in this data.  And some omissions. 
+load data infile '/Users/vaibhav/mysqlFile/person.txt' 
+into table person
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile '/Users/vaibhav/mysqlFile/building.txt' 
+into table building
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile '/Users/vaibhav/mysqlFile/lease.txt' 
+into table lease
+fields terminated by '\t'
+lines terminated by '\r\n';
+
+load data infile '/Users/vaibhav/mysqlFile/apartment.txt' 
+into table apartment
+fields terminated by '\t'
+lines terminated by '\n';
+
+load data infile '/Users/vaibhav/mysqlFile/bank.txt' 
+into table bank
+fields terminated by '\t'
+lines terminated by '\r\n';

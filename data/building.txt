@@ -1,0 +1,10 @@
+224464836	Fusion Tower	Wall Street	New York	NY	10005	"Hardwood, High Ceilings, Renovated, Marble Bath, Granite Kitchen"	
+962163458	Calypso Spire	34th Street	New York	NY	10001	"Hardwood, High Ceilings, Renovated, Marble Bath, Granite Kitchen"	
+304215280	Endurance Pillar	Melrose Avenue	Los Angeles	CA	90038	Central A/C. High ceiling. Full bathroom with good closet space and heating light.	
+999999999	Mirage Place	Hollywood Boulevard	Los Angeles	CA	90028	"Hardwood, High Ceilings, Renovated, Marble Bath, Granite Kitchen"	
+430731998	Diamond Tower	Main Street	Houston	TX	77030	"Doorman, Elevator, Health Club, Garage, Lounge, Valet, Roof Deck"	
+874120742	Phantom Peak Tower	Chicago Avenue	Chicago	IL	60622	Fully equipped with Washer/Dryer. Stainless Steel Appliances. Split Central A/C Units.	
+373620673	Landscape Building	Canal Street	New York	NY	10013	"Doorman, Elevator, Health Club, Garage, Lounge, Valet, Roof Deck"	
+485255541	World Center	Washington Street	San Francisco	CA	94118	"Doorman, Elevator, Health Club, Garage, Lounge, Valet, Roof Deck"	
+138972306	Forsaken Strand Tower	Lake Way	Miami	FL	33014	Fully equipped with Washer/Dryer. Stainless Steel Appliances. Split Central A/C Units.	
+111111111	Daydream Lookout	Jefferson Street	Seattle	WA	98104	Full bathroom with good closet space and heating light.	 

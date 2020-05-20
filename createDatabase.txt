@@ -1,0 +1,56 @@
+create database Apartments;
+
+
+use Apartments;
+
+DROP TABLE IF EXISTS apartment, building, person, bank, lease;  /* cleanup old stuff */
+
+
+create table person
+  (pID    char(9)  PRIMARY KEY,
+   lastname  char(12) NOT NULL,    
+   firstname char(12),
+   email  varchar(255),
+   phone    varchar(15)); /* International standards can support up to 15 digits */
+
+create table building
+  (bID       char(9) PRIMARY KEY,
+   name  char(24) NOT NULL,    /* varying length string */
+   street varchar(64), 
+   city    varchar(64) NOT NULL,  
+   state   char(24) NOT NULL,
+   zip   char(5) NOT NULL,
+   descr     varchar(256));
+
+create table lease
+  (leaseID    char(9) PRIMARY KEY,
+   term char(2) NOT NULL, /* in months */
+   inDate   date,
+   ownerID    char(9) NOT NULL,
+   tenantID    char(9) NOT NULL,
+   CONSTRAINT FOREIGN KEY (ownerID) REFERENCES person(pID),
+   CONSTRAINT FOREIGN KEY (tenantID) REFERENCES person(pID));   
+
+create table apartment
+  (aID		 char(9) PRIMARY KEY,	 
+   aptNum	 varchar(4) NOT NULL,		
+   bedNum 	 char(1), 
+   bathNum	 char(1), 
+   size		 varchar(6), 
+   rent		 varchar(5),  
+   bID	     char(9) NOT NULL,
+   ownerID       char(9) NOT NULL, 
+   leaseID	 char(9),
+   CONSTRAINT FOREIGN KEY (bID) REFERENCES building(bID),
+   CONSTRAINT FOREIGN KEY (owner) REFERENCES person(pID),
+   CONSTRAINT FOREIGN KEY (leaseID) REFERENCES lease(leaseID));
+
+create table bank
+  (accNum		char(9) NOT NULL,
+   routeNum	char(9) NOT NULL,   
+   bank		varchar(12),
+   pID    char(9) NOT NULL,
+   PRIMARY KEY (accNum, routeNum),
+   INDEX (accNum),
+   INDEX (routeNum),
+   CONSTRAINT FOREIGN KEY (pID) REFERENCES person(pID));
